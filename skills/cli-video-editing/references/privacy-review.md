@@ -10,8 +10,9 @@ Inspect the speech transcript and captions for spoken names, email addresses, do
 
 ## Choose the redaction method
 
-- Use an opaque mask for values that must be hidden. Blur, pixelation, or a translucent shape may leave short text legible.
-- Replace a sensitive screen with a clean, labelled summary when many values move or scroll. Use reserved example domains such as `example.com`; do not copy a live company's identifying detail into a replacement panel.
+- Keep authentic application pages visible when they establish where the work happened. Blur names, account labels, identifiers, private message content, domains, and record values in place while leaving useful product branding and navigation recognizable.
+- Check the blur at full output resolution. Increase its strength or use an opaque mask when any private text remains readable; never rely on a translucent shape.
+- Replace a screen with a clean, labelled summary only when its private values move or scroll too much for reliable redaction. Use reserved example domains such as `example.com`; do not copy a live company's identifying detail into a replacement panel.
 - Preserve a separate presenter camera layer when it is safe and useful. Composite it above the redaction surface and inspect its bounds so no strip of the original screen peeks around it.
 - If the camera frame moves, track it or cover the entire screen instead of relying on a fixed hole in the mask.
 - For spoken identifiers, redact the corresponding audio or replace the relevant narration/caption only when that fits the user's request. Keep the edit synchronized and disclose a substantive wording change.
